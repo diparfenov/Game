@@ -101,6 +101,7 @@ body {
 }
 
 button {
+  -webkit-appearance: none;
   border: medium none;
   background-image: none; 
   background: transparent;
@@ -124,25 +125,30 @@ button {
   cursor:default;
   width: 100px;
   border-radius: 30px;
+  -webkit-appearance: none;
 }
 
 .btn-play-disable {
+  -webkit-appearance: none;
   cursor: pointer;
   width: 100px;
   height: 50px;
   border-radius: 30px;
 }
 .btn-play {
+  -webkit-appearance: none;
   width: 100px;
   height: 50px;
   border-radius: 30px;
 }
 
 .btn-play:hover {
+  -webkit-appearance: none;
   background-color: rgba(0,0,0,0.2);
  }
  
  .btn-play:active {
+  -webkit-appearance: none;
    background-color: rgba(0,0,0,0.3);
    transform: scale(0.6);
  }
