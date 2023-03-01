@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import "./MainFrame.css";
+
 import Rock from "./images/Rock.svg";
 import Paper from "./images/Paper.svg";
 import Scissors from "./images/Scissors.svg";
 import QuestionMark from "./images/QuestionMark.svg";
+
 import HumanFrame from "./HumanFrame";
 import MachineFrame from "./MachineFrame";
 import ScoreFrame from "./ScoreFrame";
 import Header from "./Header";
 import Footer from "./Footer";
-//import Modal from "./Modal";
 
 export default function MainFrame() {
   const [choiceHuman, setChoiceHuman] = useState("QuestionMark");

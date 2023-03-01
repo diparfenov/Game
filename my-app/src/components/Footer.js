@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "./images/black_logo_GuideDAO.svg"
 
+
+
 export default function Footer() {
   return (
     <div className="footer">
