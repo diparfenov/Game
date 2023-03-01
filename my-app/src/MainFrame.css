@@ -102,8 +102,7 @@ body {
 button {
   
   border: medium none;
-  background-image: none; 
-  background: transparent;
+  background-image: none; ;
   background-color: rgba(0,0,0,0.1);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
@@ -111,7 +110,8 @@ button {
 
   font-size: 20px;
   font-weight:600;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron';
+  color: black;
 
   transform: scale(1);
   transition: 0.3s all;
@@ -119,12 +119,13 @@ button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  -webkit-appearance: none;
 }
 .btn-score {
   cursor:default;
   width: 100px;
   border-radius: 30px;
+  font-family: 'Orbitron';
+  color: black;
 }
 
 .btn-play-disable {
@@ -132,20 +133,28 @@ button {
   width: 100px;
   height: 50px;
   border-radius: 30px;
+  font-family: 'Orbitron';
+  color: black;
 }
 .btn-play {
   width: 100px;
   height: 50px;
   border-radius: 30px;
+  font-family: 'Orbitron';
+  color: black;
 }
 
 .btn-play:hover {
   background-color: rgba(0,0,0,0.2);
+  font-family: 'Orbitron';
+  color: black;
  }
  
  .btn-play:active {
    background-color: rgba(0,0,0,0.3);
    transform: scale(0.6);
+   font-family: 'Orbitron';
+  color: black;
  }
  
 .text {
