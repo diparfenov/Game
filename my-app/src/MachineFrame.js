@@ -7,7 +7,7 @@ export default function MachineFrame({
 }) {
   return (
     <div className="machineFrame">
-      <p className="name">Machine</p>
+      <p className="text-name">Machine</p>
       <img src={img} width="200" alt={choice} />
       <p className={(!able) ? "invisible" : "text"}>{choice === "QuestionMark" ? "Machine chooses..." : choice}</p>
     </div>

@@ -6,10 +6,10 @@
 
 body {
   color: #000000;
-  font-size: 20px; 
-  font-weight:600;
-  font-family: 'Orbitron', sans-serif;
-  background:linear-gradient(#1290c2, #a2eec8);
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Orbitron", sans-serif;
+  background: linear-gradient(#1290c2, #a2eec8);
 }
 
 .wrapper {
@@ -17,14 +17,14 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-
 }
 
 .header {
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .mainFrame {
@@ -37,23 +37,24 @@ body {
   width: 100%;
 }
 
-.humanFrame, .machineFrame, .scoreFrame {
+.humanFrame,
+.machineFrame,
+.scoreFrame {
+  transition: 0.4s all;
   width: 100%;
-  background-color: rgba(0,0,0,0.1);
-  height: 300px;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 100%;
   padding: 20px;
   border-radius: 4rem;
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
-.invisible {
-  visibility: hidden;
 
-}
 .container {
   flex-direction: row;
   display: flex;
@@ -62,7 +63,7 @@ body {
 }
 
 .scoreFrame {
-  font-size: 20px; 
+  font-size: 20px;
   margin: 20px 0px;
   display: flex;
   justify-content: space-around;
@@ -71,18 +72,30 @@ body {
   transform: scale(1);
   transition: 0.4s all;
   height: 90px;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 3rem;
+  text-align: center;
+}
 
-}
-.name {
-  font-size: 30px;
-}
 .scoreFrame.active {
   padding: 20px;
   font-size: 40px;
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0,0,0,0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .footer {
@@ -91,7 +104,7 @@ body {
   align-items: center;
   padding: 20px;
   font-size: 20px;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .footer img {
@@ -100,83 +113,96 @@ body {
 }
 
 button {
-  
   border: medium none;
-  background-image: none; ;
-  background-color: rgba(0,0,0,0.1);
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
 
   font-size: 20px;
-  font-weight:600;
-  font-family: 'Orbitron';
+  font-weight: 600;
+  font-family: "Orbitron";
   color: black;
 
   transform: scale(1);
   transition: 0.3s all;
-  
+
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-.btn-score {
-  cursor:default;
-  width: 100px;
-  border-radius: 30px;
-  font-family: 'Orbitron';
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-family: "Orbitron";
   color: black;
 }
 
-.btn-play-disable {
-  cursor: pointer;
-  width: 100px;
-  height: 50px;
-  border-radius: 30px;
-  font-family: 'Orbitron';
+button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: scale(0.6);
+  font-family: "Orbitron";
   color: black;
 }
+
+button:disabled {
+  color: #3a3a3a;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  cursor: default;
+  border-radius: 30px;
+  font-family: "Orbitron";
+}
+
+button:disabled:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #3a3a3a;
+  transform: scale(1);
+}
+
 .btn-play {
   width: 100px;
-  height: 50px;
   border-radius: 30px;
-  font-family: 'Orbitron';
-  color: black;
+  font-family: "Orbitron";
 }
 
-.btn-play:hover {
-  background-color: rgba(0,0,0,0.2);
-  font-family: 'Orbitron';
-  color: black;
- }
- 
- .btn-play:active {
-   background-color: rgba(0,0,0,0.3);
-   transform: scale(0.6);
-   font-family: 'Orbitron';
-  color: black;
- }
- 
+.btn-play:disabled {
+  width: 100px;
+}
+
+.text-name {
+  font-size: 30px;
+}
+
 .text {
-  background: linear-gradient(-45deg, #6acece, #6acece, #030b3b, #030b3b, #55ebcb, #55ebcb);
+  background: linear-gradient(
+    -45deg,
+    #6acece,
+    #6acece,
+    #030b3b,
+    #030b3b,
+    #55ebcb,
+    #55ebcb
+  );
   background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animated_text 6s ease-in-out infinite;
   -moz-animation: animated_text 6s ease-in-out infinite;
   -webkit-animation: animated_text 6s ease-in-out infinite;
-  font-size: 20px; 
+  font-size: 20px;
 }
 
 @keyframes animated_text {
   0% {
-      background-position: 0px 50%;
+    background-position: 0px 50%;
   }
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-      background-position: 0px 50%;
+    background-position: 0px 50%;
   }
 }
 
@@ -184,9 +210,10 @@ button {
   .mainFrame {
     flex-direction: row;
   }
-  .humanFrame, .machineFrame, .scoreFrame {
-    width: 100%;
-
+  .humanFrame,
+  .machineFrame,
+  .scoreFrame {
+    width: 400px;
   }
   .scoreFrame {
     width: 150px;
@@ -197,7 +224,42 @@ button {
     transition: 0.2s all;
   }
   .scoreFrame.active {
-    width: 1000px;
-    padding: 0px;
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .mainFrame {
+    flex-direction: row;
+    transform: scale(1.2);
+    transition: 0.4s all;
+  }
+}
+
+@media screen and (min-device-width: 0px) and (max-device-width: 374px) {
+  .mainFrame {
+    transform: scale(0.95);
+    transition: 0.4s all;
+  }
+
+  .humanFrame img,
+  .machineFrame img {
+    width: 180px;
+  }
+
+  .btn-right {
+    position: relative;
+    right: 15%;
+  }
+  .btn-left {
+    position: relative;
+    left: 15%;
+  }
+}
+@media only screen and (min-width: 2500px) {
+  .mainFrame {
+    flex-direction: row;
+    transform: scale(2);
+    transition: 0.4s all;
   }
 }

@@ -11,12 +11,14 @@ export default function ScoreFrame({
   if (active === "") {
   return (
     <div className="scoreFrame">
-      <button className="btn-score">
+      <div className="score">
+      <p>
 {scoreHuman}:{scoreMachine}
-        </button>
-      <p className="name">VS</p>
+        </p>
+        </div>
+      <p className="text-name">VS</p>
       <button
-        className={able || choiceHuman === "QuestionMark" ? "btn-play-disable" : "btn-play"}
+        className="btn-play"
         disabled={able || choiceHuman === "QuestionMark"}
         onClick={onHandlePlayClick}
       >
